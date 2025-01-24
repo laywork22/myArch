@@ -10,7 +10,6 @@ sudo su
 Search your drive with lsblk
 ```
 lsblk
- 
 ```
 Use cfdisk to partition the drive
 ```
