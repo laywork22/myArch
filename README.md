@@ -1,7 +1,7 @@
 # ArchLinux/ArtixLinux(dinit) basic installation
 ## Basic installation
 
-###Login as root (Artix) 
+Login as root (Artix) 
 ```
 sudo su
 ```
