@@ -2,14 +2,20 @@
 ## Basic installation
 
 ###Login as root (Artix) 
-> sudo su
+```
+sudo su
+```
 
 ### Partioning (Arch/Artix)
 Search your drive with lsblk
-> lsblk 
-
+```
+lsblk
+ 
+```
 Use cfdisk to partition the drive
-> cfdisk /dev/sdx #where sdx must be changed with corresponding drive name
+```
+cfdisk /dev/sdx #where sdx must be changed with corresponding drive name
+```
 Create an Efi and Root partition
 ```
 New -> 512M -> Type=EFI \
