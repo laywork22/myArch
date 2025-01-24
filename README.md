@@ -11,9 +11,8 @@ Search your drive with lsblk
 Use cfdisk to partition the drive
 > cfdisk /dev/sdx #where sdx must be changed with corresponding drive name
 Create an Efi and Root partition
-> New -> 512M -> Type=EFI
-
-> New -> *press enter to use the remaining space*
-> Write -> type *yes*
-> Exit
+> New -> 512M -> Type=EFI \n
+> New -> *press enter to use the remaining space* \n
+> Write -> type *yes* \n
+> Exit \n
 
