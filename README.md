@@ -123,7 +123,7 @@ EDITOR=vim visudo #replace vim with your favorite editor
 and decomment #wheel ...
 to enable privileges as a superuser for your user
 ### ONLY FOR ARTIX
-Add arch repositories
+Add arch repositories\
 Modify /etc/pacman.conf and add these lines
 ```
 [lib32]
