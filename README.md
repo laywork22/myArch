@@ -125,6 +125,12 @@ and decomment #wheel ...
 to enable privileges as a superuser for your user
 ### ONLY FOR ARTIX
 Add arch repositories\
+```
+#Install these programs
+pacman -S archlinux-keyring artix-archlinux-support
+#and run these command
+pacman-key --populate archlinux
+```
 Modify /etc/pacman.conf and add these lines
 ```
 [lib32]
@@ -135,13 +141,9 @@ Include = /etc/pacman.d/mirrorlist
 Include = /etc/pacman.d/mirrorlist-arch
 [multilib]
 Include = /etc/pacman.d/mirrorlist-arch
-[community]
-Include = /etc/pacman.d/mirrorlist-arch
 ```
 Also decomment something where color is mentioned (I don't remember atm), everything will look more beatiful :)
-```
-pacman-key --populate archlinux
-```
+
 Finally let's install other packages
 ```
 pacman -Syy grub os-prober grub-btrfs inotify-tools timeshift pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber pipewire-dinit pipewire-pulse-dinit wireplumber-dinit
