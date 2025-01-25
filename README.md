@@ -115,6 +115,7 @@ vim /etc/hosts
 Create new user and add it to groups (specifically wheel)
 ```
 useradd -mG audio,video,input,network,wheel,storage laywork #replace laywork with your favorite name
+passwd laywork
 ```
 #modify sudoers
 ```
