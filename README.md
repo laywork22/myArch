@@ -148,7 +148,7 @@ Finally let's install other packages
 ```
 pacman -Syy grub os-prober grub-btrfs inotify-tools timeshift pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber pipewire-dinit pipewire-pulse-dinit wireplumber-dinit
 ```
-Let's install grub (I'll switch to refind when I'll understand how to fucking make that shit work)
+Let's install grub (I'll switch to refind when I'll understand how to  make that work)
 ```
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
