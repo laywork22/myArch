@@ -150,7 +150,7 @@ pacman -Syy grub os-prober grub-btrfs inotify-tools timeshift pipewire pipewire-
 ```
 Let's install grub (I'll switch to refind when I'll understand how to  make that work)
 ```
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 ### Enable NetworkManager
