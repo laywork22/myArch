@@ -168,7 +168,16 @@ exit
 umount -R /mnt
 reboot
 ```
+
 Enable and start the syncronization service on arch
 ```
 sudo timedatectl set-ntp true
+```
+Log in your new system and install yay for AUR packages
+```
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
+```
+#install timeshift-autosnap from AUR
+yay -S timeshift-autosnap
 ```
