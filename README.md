@@ -52,11 +52,11 @@ swapon /dev/sdx2
 Install base system
 ### Arch
 ```
-pacstrap -K /mnt base base-devel linux linux-firmware linux-headers networkmanager sudo vim man-db man-pages texinfo git btrfs-progs zstd
+pacstrap -K /mnt base base-devel linux linux-firmware linux-headers networkmanager sudo vim man-db man-pages texinfo git btrfs-progs zstd efibootmgr
 ```
 ### Artix
 ```
-basestrap /mnt base base-devel linux linux-firmware linux-headers linux-lts linux-lts-headers dinit elogind-dinit networkmanager git networkmanager networkmanager-dinit btrfs-progs zstd man vim 
+basestrap /mnt base base-devel linux linux-firmware linux-headers linux-lts linux-lts-headers dinit elogind-dinit networkmanager git networkmanager networkmanager-dinit btrfs-progs zstd man vim efibootmgr
 ```
 If you need drivers for ur machine and CPU microcode (in my case it's AMD)
 ```
