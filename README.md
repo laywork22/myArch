@@ -41,7 +41,7 @@ Mount the root partition and subvolumes (root,home,.snapshots)
 mount /dev/sdx3 /mnt
 
 mount -o noatime,nodiratime,compress=zstd,commit=120,space_cache=v2,ssd,discard=async,autodefrag,subvol=@ /dev/sdx3 /mnt
-mount --mkdir -o noatime,nodiratime,compress=zstd,commit=120,space_cache=v2,ssd,discard=async,autodefrag,subvol=@home/dev/sdx3 /mnt/home
+mount --mkdir -o noatime,nodiratime,compress=zstd,commit=120,space_cache=v2,ssd,discard=async,autodefrag,subvol=@home /dev/sdx3 /mnt/home
 mount --mkdir -o noatime,nodiratime,compress=zstd,commit=120,space_cache=v2,ssd,discard=async,autodefrag,subvol=@snapshots /dev/sdx3 /mnt/.snapshots
 ```
 Mount the EFI partition and enable swap
